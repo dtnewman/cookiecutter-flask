@@ -43,5 +43,8 @@ docs/_build
 # Cookiecutter
 output/
 
+# PyCharm
+.idea/
+
 myflaskapp/
 bower_components
