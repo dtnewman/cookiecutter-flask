@@ -14,7 +14,7 @@ from {{cookiecutter.app_name}}.database import db
 from {{cookiecutter.app_name}}.settings import Local, Production
 from {{cookiecutter.app_name}}.user.models import User
 
-CONFIG = ProdConfig if os.environ.get('{{cookiecutter.app_name | upper}}_ENV') == 'prod' else Local
+CONFIG = Production if os.environ.get('{{cookiecutter.app_name | upper}}_ENV') == 'prod' else Local
 HERE = os.path.abspath(os.path.dirname(__file__))
 TEST_PATH = os.path.join(HERE, 'tests')
 
