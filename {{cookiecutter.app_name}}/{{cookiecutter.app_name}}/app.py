@@ -5,10 +5,10 @@ from flask import Flask, render_template
 from {{cookiecutter.app_name}} import public, user
 from {{cookiecutter.app_name}}.assets import assets
 from {{cookiecutter.app_name}}.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate
-from {{cookiecutter.app_name}}.settings import ProdConfig
+from {{cookiecutter.app_name}}.settings import Production
 
 
-def create_app(config_object=ProdConfig):
+def create_app(config_object=Production):
     """An application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
 
     :param config_object: The configuration object to use.
