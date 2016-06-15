@@ -23,7 +23,7 @@ class Local(Config):
     ENV = 'lcl'
     DEBUG = True
     ASSETS_DEBUG = True
-    SQLALCHEMY_DATABASE_URI =  'postgresql://kyruus:kyruus@localhost:5432/myflaskapp'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://kyruus:kyruus@localhost:5432/myflaskapp'
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
 
 
