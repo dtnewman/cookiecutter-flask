@@ -20,16 +20,17 @@ class Config(object):
 class Local(Config):
     """Production configuration."""
 
-    ENV = 'prod'
-    DEBUG = False
-    SQLALCHEMY_DATABASE_URI =  'postgresql://kyruus:kyruus@localhost:5432/{{cookiecutter.app_name | lower}}'
+    ENV = 'lcl'
+    DEBUG = True
+    ASSETS_DEBUG = True
+    SQLALCHEMY_DATABASE_URI =  'postgresql://kyruus:kyruus@localhost:5432/myflaskapp'
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
 
 
 class Production(Config):
     """Production configuration."""
 
-    ENV = 'prod'
+    ENV = 'prd'
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = 'postgresql://address_to_remote_db'  # TODO: Change me
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
